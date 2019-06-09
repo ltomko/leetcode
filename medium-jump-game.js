@@ -1,6 +1,6 @@
 var canJump = function(nums) {
     
-    last = nums.length - 1;
+    last = nums.length - 2;
     max = 0;
     
     if (last == 0){ return true; }
