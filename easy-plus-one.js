@@ -5,10 +5,8 @@
 var plusOne = function(digits) {
     
     last = digits.length - 1;
-
     digits[last] = digits[last] + 1;
-   
-   var i;
+
     for (i = last; i >= 0; i--) { 
        
         if (digits[i] == 10) {
@@ -18,12 +16,9 @@ var plusOne = function(digits) {
                 digits[j] = digits[j] + 1;
             } else {
                 digits.unshift(1);
-            }
-            
-        }
-        
+            }   
+        }   
     }
-
     
     return digits;
 };
